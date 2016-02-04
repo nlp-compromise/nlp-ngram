@@ -1,25 +1,25 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
   grunt.initConfig({
 
     watch: {
       files: ['./src/*', './src/**'],
-      tasks: ['run:index'],
+      tasks: ['run:index']
     },
 
     run: {
       index: {
-        exec: 'node ./src/index.js',
+        exec: 'node ./src/index.js'
       },
       build: {
-        exec: 'browserify ./src/index.js -o ./build/nlp-compromise.es5.js -t [ babelify --presets [ es2015 ] ]'
+        exec: 'browserify ./src/index.js --standalone nlpNgram -o ./builds/nlp-ngram.es5.js -t [ babelify --presets [ es2015 ] ]'
       }
     },
 
     filesize: {
       base: {
         files: [{
-          src: ['./build/nlp-compromise.es5.js']
+          src: ['./builds/nlp-ngram.es5.js']
         }],
         options: {
           ouput: [{
@@ -32,7 +32,6 @@ module.exports = function (grunt) {
     mochaTest: {
       test: {
         options: {
-          require: 'babel/register',
           reporter: 'spec',
           clearRequireCache: true,
           colors: true,
@@ -48,7 +47,7 @@ module.exports = function (grunt) {
         options: {
           reportFormats: ['html'],
           quiet: true,
-          coverageFolder: './tests/coverage',
+          coverageFolder: './tests/coverage'
         }
       }
     }

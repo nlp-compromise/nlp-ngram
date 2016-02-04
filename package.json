@@ -3,7 +3,7 @@
   "name": "nlp-ngram",
   "description": "frequency-analysis of the terms in a text",
   "version": "0.0.1",
-  "main": "src/index.js",
+  "main": "builds/nlp-ngram.es5.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/nlp-compromise/nlp-ngram.git"
@@ -14,8 +14,11 @@
     "watch": "grunt watch",
     "build": "grunt build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "nlp_compromise":">=3.0.0"
+  },
   "devDependencies": {
+    "babel-preset-es2015": "6.3.13",
     "babelify": "7.2.0",
     "grunt": "0.4.5",
     "grunt-contrib-watch": "0.6.1",

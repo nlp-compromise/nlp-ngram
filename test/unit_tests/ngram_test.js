@@ -4,7 +4,7 @@ let should = require('should');
 
 //apply the plugin
 const ngram = require('../../src/index.js');
-const nlp = require('../../../nlp-core');
+const nlp = require('../../../nlp_compromise');
 nlp.plugin(ngram);
 
 describe('ngram', function() {
@@ -16,7 +16,7 @@ describe('ngram', function() {
       ['Tom Hanks came for dinner', 'tom hanks', 1],
       ['Tom Hanks played Tom Hanks for dinner', 'tom hanks', 2],
       ['Tom Hanks played Tom Hanks. We watched Tom Hanks.', 'tom hanks', 3],
-      ['55 and 55', '55', 2],
+      ['55 and 55', '55', 2]
     ];
     tests.forEach(function(a) {
       let n = nlp.text(a[0]);
