@@ -69,5 +69,5 @@ module.exports = function(grunt) {
   grunt.registerTask('watch', ['watch']);
   grunt.registerTask('coverage', ['mocha_istanbul']);
   grunt.registerTask('test', ['mochaTest']);
-  grunt.registerTask('build', ['mochaTest', 'run:build', 'filesize']);
+  grunt.registerTask('build', ['mochaTest', 'run:build', 'run:copy', 'filesize']);
 };
