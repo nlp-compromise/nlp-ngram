@@ -4,7 +4,7 @@ let should = require('should');
 
 //apply the plugin
 const ngram = require('../../src/index.js');
-const nlp = require('../../../nlp_compromise');
+const nlp = require('nlp_compromise');
 nlp.plugin(ngram);
 
 describe('ngram', function() {
