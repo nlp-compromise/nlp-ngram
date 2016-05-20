@@ -3,7 +3,7 @@
   "name": "nlp-ngram",
   "description": "frequency-analysis of the terms in a text",
   "version": "0.0.2",
-  "main": "builds/nlp-ngram.es5.js",
+  "main": "builds/nlp-ngram.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/nlp-compromise/nlp-ngram.git"
