@@ -2,7 +2,7 @@
   "author": "Spencer Kelly <spencermountain@gmail.com> (http://spencermounta.in)",
   "name": "nlp-ngram",
   "description": "frequency-analysis of the terms in a text",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "builds/nlp-ngram.js",
   "repository": {
     "type": "git",
